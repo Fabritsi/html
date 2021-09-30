@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serials</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta charset="utf-8">
+    <style> body {background:cornflowerblue ;}</style>
 </head>
 <body>
+   
+
     <header>
         <section class = "header-wrapper">
             <div class="upper-wrapper">
@@ -14,7 +19,22 @@
             </div>
     </header>
 
-    <div class="title"><h1><b>Серіали та причини їх популярності</b></h1></div>
+    
+    
+    <form>
+        <p><input type="search" name="q" placeholder="Пошук по сайту"> 
+        <input type="submit" value="Знайти"></p>
+    </form>
+
+    <select>
+        <option></option>
+        <option>Причини популярності серіалів</option>
+        <option>Таблиця рейтингу топ 3</option>
+        <option>Посилання на подробиці про серіали в топ 3</option>	
+        <option>Форма реєстрації</option>
+     </select>
+
+    <div class="title"><h1 align="center"><b>Серіали та причини їх популярності</b></h1></div>
     <p><b>Серіа́л</b> — поширене та популярне явище сучасного мистецтва, яке використовується (трапляється) переважно в літературі, кіно, телебаченні та анімації; спосіб організації та побудови художніх творів, котрий полягає в тому, що твір складається з багатьох окремих частин, зазвичай відносно невеликого розміру. Як правило, твори серіалу об'єднані спільними персонажами, інколи спільним антуражем подій чи лінійним сюжетом. Проте абсолютна більшість серіалів тримається саме на персонажах.</p>
     <p><h2>Причини популярності серіалів</h2></p>
     <ul><li><b>Психологічні причини</b> — людям по-простому цікаві не лише сюжет, але й герої, антураж, то ж вони з радістю готові сприймати нові історії про улюблених героїв: для людей природно хотіти більше хорошого. Люди також звикають до реалій серіалу — і очікують його продовження просто за звичкою. Людям досить складно сприймати нове, тому довгі серіали в яких процес ознайомлення з реаліями художнього твору розтягнутий в часі легше сприймається ніж звичайні твори.</li>
@@ -34,8 +54,50 @@
     <li><a href="https://uk.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BF%D0%B5%D1%80%D0%BE%D0%B2%D0%B8%D0%B9_%D0%B1%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_(%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%B5%D1%80%D1%96%D0%B0%D0%BB)" class="navigation-link">La Casa de Papel</a></li>
     <li><a href="https://uk.wikipedia.org/wiki/%D0%9F%D1%96%D1%82%D1%8C%D0%BC%D0%B0_(%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%B5%D1%80%D1%96%D0%B0%D0%BB)" class="navigation-link">Dark</a></li>
     </ol>
+    
+    <form>
+		<input type =" text" placeholder="Введіть заголовок">
+	</form>
+	   
+    <form>	
+		<textarea id="text"  >  			
+		</textarea>
+	</form>
+	   
+    <form> 
+		<label for="text">Посилання на файл для завантаження</label>
+		<input type="text">
+	</form>
 
-    <footer>Фабріці Яна (Прикладна математика)</footer>
+    <form action="action_page.php">
+		<div class="container">
+		  <h1>Форма реєстрації</h1>
+		  <hr>
+	  
+		  
+        <label> Ваше ім'я: </label>
+        <input id="user" name="username" type="text">
+        <p><label for="email"> Ваша електронна адреса: </label>
+        <input type="text" name="email" placeholder ="email@example.com"></p>    
+            
+
+		<p><label for="psw"><b>Пароль:</b></label>
+		<input type="password" placeholder="Введіть пароль" name="psw" required></p>
+		
+	  
+		<p><a href="#">Забули пароль</a></p>
+		 
+		<hr>
+        <label> 
+			   "Згоден/а з умовами конфіденційності" 
+			  <a href="#">Умови конфіденційностi</a>
+			  <input class="chexbox" type="checkbox"
+		</label>
+			
+		</div>
+	  </form>
+
+    <footer align="center">Фабріці Яна (Прикладна математика 2)</footer>
 
 </body>
 </html>
