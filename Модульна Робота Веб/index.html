@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [2, 4, 78, 14, 10, 5, 2];
+        let x = 78;
+        let index = arr.indexOf(x)+1;
+        let sum = 0;
+for (let i = index; i<arr.length; i++)
+{
+   sum = sum + arr[i];
+}
+alert (sum);
+    </script>
+
+<div class="form-group">
+    <h3>Тренажер додавання чисел</h3>
+    <p><label for="inp_1">Введіть число a:</label>
+    <input type="number" class="form-control" id="inp_1"></p>
+    <p><label for="inp_2">Введіть число b:</label>
+    <input type="number" class="form-control" id="inp_2"></p>
+    <p><label for="inp_3">Введіть їх суму:</label>
+    <input type="number" class="form-control" id="inp_3"></p>
+    </div>
+    <p><button onclick= "check_()" class="btn btn-primary" >Додати</button></p>
+       <script>
+        function check_(){
+        
+        var z = parseInt(document.getElementById('inp_2').value);    
+        var x = parseInt(document.getElementById('inp_1').value);
+        var y = parseInt(document.getElementById('inp_3').value);
+        var ab = z + x;
+        
+            if (ab == y)
+            {alert("Правильно!");}
+            else
+            {alert("Не правильно! Спробуй ще раз");}
+        }
+        </script>
+</body>
+</html>
